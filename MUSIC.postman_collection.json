@@ -1,0 +1,62 @@
+{
+	"variables": [],
+	"info": {
+		"name": "MUSIC",
+		"_postman_id": "43552cb8-e799-135f-ae08-fb9da002dbbd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Albums",
+			"request": {
+				"url": "http://localhost:8443/music/artists",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add-Album",
+			"request": {
+				"url": "http://localhost:8443/music/artists",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\" : \"10004\",\r\n        \"albumId\": \"XXX104\",\r\n        \"artist\": \"Naresh\",\r\n        \"title\": \"Nelo Unna Prema\",\r\n        \"releaseYear\": \"2020\",\r\n        \"genre\": \"NNNN\"\r\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update-Album",
+			"request": {
+				"url": "http://localhost:8443/music/artists/10004",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
